@@ -22,9 +22,6 @@ let notes = [
   }
 ]
 
-app.get('/',( request, response)=>{
-  response.send('<h1>Hello World!</h1>')
-})
 
 app.get('/api/note', (request,response)=>{
   response.json(notes)
